@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Currículo</title>
+    <link rel="stylesheet" href="styleform.css">
+</head>
+
+<body>
+    <header class="topopagina">
+        <h1>Cadastrar Currículo</h1>
+    </header>
+    <section class="section1">
+        <h3>Dados Pessoais:</h3>
+        <label for="name">Nome Completo:*</label>
+        <input type="text" name="nome" id="nome" required>
+        <label for="name">Nome Social:</label>
+        <input type="text" name="name" id="nomesocial">
+        <label for="cpf">CPF:*</label>
+        <input type="text" name="cpf" id="cpf">
+        <div id="cpf-error" style="color: red; display: none;">CPF inválido!</div>
+        <label for="rg">RG:*</label>
+        <input type="text" name="rg" id="rg" required>
+        <label for="orgaoemissor">Org.Emissor:*</label>
+        <input type="text" id="orgaoemissor" required>
+        <label for="ufrg">UF-RG*</label>
+        <input type="text" id="ufrg" required>
+        <label for="datanascimento">Data de Nascimento:*</label>
+        <input type="date" id="datanascimento" required>
+        <label for="paisdeorigem">País de Origem:*</label>
+        <select class="form-control" required>
+            <option value="paisdeorigempaisdeorigem" id="paisdeorigem">
+            <option>Afeganistão</option>
+            <option>África do Sul</option>
+            <option>Albânia, </option>
+            <option>Alemanha</option>
+            <option>Andorra</option>
+            <option>Angola</option>
+            <option>Anguilla</option>
+            <option>Antigua E Barbuda</option>
+            <option>Antilhas Holandesas</option>
+            <option>Arábia Saudita</option>
+            <option>Argélia</option>
+            <option>Argentina</option>
+            <option>Armênia, </option>
+            <option>Aruba</option>
+            <option>Austrália</option>
+            <option>Áustria</option>
+            <option>Azerbaijão</option>
+            <option>Bahamas</option>
+            <option>Bahrein</option>
+            <option>Bangladesh</option>
+            <option>Barbados</option>
+            <option>Belarus, </option>
+            <option>Bélgica</option>
+            <option>Belize</option>
+            <option>Benin</option>
+            <option>Bermudas</option>
+            <option>Bolívia</option>
+            <option>Bosnia-Herzegovina ()</option>
+            <option>Botsuana</option>
+            <option>Brasil</option>
+            <option>Brunei</option>
+            <option>Bulgária, </option>
+            <option>Burkina Faso</option>
+            <option>Burundi</option>
+            <option>Butão</option>
+            <option>Cabo Verde</option>
+            <option>Camarões</option>
+            <option>Camboja</option>
+            <option>Canadá</option>
+            <option>Canárias</option>
+            <option>Catar</option>
+            <option>Cayman</option>
+            <option>Cazaquistao</option>
+            <option>Chade</option>
+            <option>Chile</option>
+            <option>China, República Popular</option>
+            <option>Chipre</option>
+            <option>Christmas (Navidad)</option>
+            <option>Cingapura</option>
+            <option>Cocos-Keeling</option>
+            <option>Colômbia</option>
+            <option>Comores</option>
+            <option>Congo</option>
+            <option>Congomocrática do</option>
+            <option>Cook</option>
+            <option>Coréia, Rep.Pop.Democrática</option>
+            <option>Coréia, </option>
+            <option>Costa do Marfim</option>
+            <option>Costa Rica</option>
+            <option>Coveite</option>
+            <option>Croácia, </option>
+            <option>Cuba</option>
+            <option>Delegação Especial da Palestina</option>
+            <option>Dinamarca</option>
+            <option>Djibuti</option>
+            <option>Dominica, Ilha</option>
+            <option>Egito</option>
+            <option>El Salvador</option>
+            <option>Emirados Árabes Unidos</option>
+            <option>Equador</option>
+            <option>Eritreia</option>
+            <option>Eslovaca, República</option>
+            <option>Eslovênia, </option>
+            <option>Espanha</option>
+            <option>Estados Unidos</option>
+            <option>Estônia, </option>
+            <option>Etiópia</option>
+            <option>Falkland (Ilhas Malvinas)</option>
+            <option>Feroe</option>
+            <option>Fiji</option>
+            <option>Filipinas</option>
+            <option>Finlândia</option>
+            <option>Formosa (Taiwan)</option>
+            <option>França</option>
+            <option>Gabão</option>
+            <option>Gambia</option>
+            <option>Gana</option>
+            <option>Geórgia, </option>
+            <option>Gibraltar</option>
+            <option>Granada</option>
+            <option>Grécia</option>
+            <option>Groenlândia</option>
+            <option>Guadalupe</option>
+            <option>Guam</option>
+            <option>Guatemala</option>
+            <option>Guiana</option>
+            <option>Guiana Francesa</option>
+            <option>Guiné</option>
+            <option>Guiné-Bissau</option>
+            <option>Guiné-Equatorial</option>
+            <option>Haiti</option>
+            <option>Honduras</option>
+            <option>Hong Kong</option>
+            <option>Hungria, </option>
+            <option>Iemen</option>
+            <option>Índia</option>
+            <option>Indonésia</option>
+            <option>Iraque</option>
+            <option>Irã, República Islâmica do Irã</option>
+            <option>Irlanda</option>
+            <option>Islândia</option>
+            <option>Israel</option>
+            <option>Itália</option>
+            <option>Jamaica</option>
+            <option>Japão</option>
+            <option>Jersey, Ilha do Canal</option>
+            <option>Johnston</option>
+            <option>Jordânia</option>
+            <option>Kiribati</option>
+            <option>Laos, Rep.Pop.Democr.do</option>
+            <option>Lebuan</option>
+            <option>Lesoto</option>
+            <option>Letônia, </option>
+            <option>Líbano</option>
+            <option>Libéria</option>
+            <option>Líbia</option>
+            <option>Liechtenstein</option>
+            <option>Lituânia, </option>
+            <option>Luxemburgo</option>
+            <option>Macau</option>
+            <option>Macedônia, Ant.Rep.Iugoslava</option>
+            <option>Madagascar</option>
+            <option>Madeira</option>
+            <option>Malásia</option>
+            <option>Malavi</option>
+            <option>Maldivas</option>
+            <option>Mali</option>
+            <option>Malta</option>
+            <option>Man</option>
+            <option>Marianas do Norte</option>
+            <option>Marrocos</option>
+            <option>Marshall</option>
+            <option>Martinica</option>
+            <option>Maurício</option>
+            <option>Mauritânia</option>
+            <option>México</option>
+            <option>Mianmar (Birmânia)</option>
+            <option>Micronésia</option>
+            <option>Midway</option>
+            <option>Moçambique</option>
+            <option>Moldavia, </option>
+            <option>Mônaco</option>
+            <option>Mongólia</option>
+            <option>Montenegro</option>
+            <option>Montserrat</option>
+            <option>Namíbia</option>
+            <option>Nauru</option>
+            <option>Nepal</option>
+            <option>Nicarágua</option>
+            <option>Niger</option>
+            <option>Nigéria</option>
+            <option>Niue, Ilha</option>
+            <option>Norfolk, Ilha</option>
+            <option>Noruega</option>
+            <option>Nova Caledônia</option>
+            <option>Nova Zelândia</option>
+            <option>Omã</option>
+            <option>Pacífico do (possessão dos EUA)</option>
+            <option>Países Baixos (Holanda)</option>
+            <option>Palau</option>
+            <option>Panamá</option>
+            <option>Papua Nova Guiné</option>
+            <option>Paquistão</option>
+            <option>Paraguai</option>
+            <option>Peru</option>
+            <option>Pitcairn</option>
+            <option>Polinésia Francesa</option>
+            <option>Polônia, </option>
+            <option>Porto Rico</option>
+            <option>Portugal</option>
+            <option>Quênia</option>
+            <option>Quirguiz, </option>
+            <option>Reino Unido</option>
+            <option>República Centro- Africana</option>
+            <option>República Dominicana</option>
+            <option>Reunião, Ilha</option>
+            <option>Romênia</option>
+            <option>Ruanda</option>
+            <option>Rússia, Federação da</option>
+            <option>Saara Ocidental</option>
+            <option>Salomão</option>
+            <option>Samoa</option>
+            <option>Samoa Americana</option>
+            <option>San Marino</option>
+            <option>Santa Helena</option>
+            <option>Santa Lúcia</option>
+            <option>São Cristovão e Neves</option>
+            <option>São Pedro e Miquelon</option>
+            <option>São Tomé e Príncipe</option>
+            <option>São Vicente e Granadinas</option>
+            <option>Senegal</option>
+            <option>Serra Leoa</option>
+            <option>Servia</option>
+            <option>Seychelles</option>
+            <option>Síria, República Árabe da</option>
+            <option>Somália</option>
+            <option>Sri Lanka</option>
+            <option>Suazilândia</option>
+            <option>Sudão</option>
+            <option>Suécia</option>
+            <option>Suíça</option>
+            <option>Suriname</option>
+            <option>Tadjiquistão</option>
+            <option>Tailândia</option>
+            <option>Tanzania, Rep. Unida da</option>
+            <option>Tcheca, República</option>
+            <option>Território Britânico no Oceano Índico</option>
+            <option>Timor Leste</option>
+            <option>Togo</option>
+            <option>Tonga</option>
+            <option>Toquelau</option>
+            <option>Trinidad e Tobago</option>
+            <option>Tunísia</option>
+            <option>Turcas e Caicos</option>
+            <option>Turcomenistão</option>
+            <option>Turquia</option>
+            <option>Tuvalu</option>
+            <option>Ucrânia</option>
+            <option>Uganda</option>
+            <option>Uruguai</option>
+            <option>Uzbequistão</option>
+            <option>Vanuatu</option>
+            <option>Vaticano, Est. da Cidade do</option>
+            <option>Venezuela</option>
+            <option>Vietnã</option>
+            <option>Virgens (Britânicas)</option>
+            <option>Virgens (E.U.A.)</option>
+            <option>Wake, Ilha</option>
+            <option>Wallis e Futuna</option>
+            <option>Zâmbia</option>
+            <option>Zimbabue</option>
+            </option>
+        </select>
+        <label for="paisnacionalidade">País Nacionalidade:</label>
+        <select name="paisnacionalidade" id="paisnacionalidade">
+            <option value="brasil">Brasil</option>
+        </select>
+        <label for="estadosbrasil">Estado de Nascença:*</label>
+        <select class="form-control" id="estadosbrasil" required>
+            <option>Acre</option>
+            <option>Alagoas</option>
+            <option>Amapá</option>
+            <option>Amazonas</option>
+            <option>Bahia</option>
+            <option>Ceará</option>
+            <option>Distrito Federal</option>
+            <option>Espírito Santo</option>
+            <option>Goiás</option>
+            <option>Maranhão</option>
+            <option>Mato Grosso</option>
+            <option>Mato Grosso do Sul</option>
+            <option>Minas Gerais</option>
+            <option>Pará</option>
+            <option>Paraíba</option>
+            <option>Paraná</option>
+            <option>Pernambuco</option>
+            <option>Piauí</option>
+            <option>Rio de Janeiro</option>
+            <option>Rio Grande do Norte</option>
+            <option>Rio Grande do Sul</option>
+            <option>Rondônia</option>
+            <option>Roraima</option>
+            <option>Santa Catarina</option>
+            <option>São Paulo</option>
+            <option>Sergipe</option>
+            <option>Tocantins</option>
+        </select>
+        <label for="cidadenascimento">Cidade de Nascimento:*</label>
+        <input type="text" name="cidadenascimento" id="cidadenascimento" required>
+        <label for="estrangeiro">Estrangeiro?*</label>
+        <input type="radio" value="estrangeiro" name="estrangeiro"> Sim
+        <input type="radio" value="estrangeiro" name="estrangeiro"> Não
+        <label for="pcd">PCD(Pessoa com Deficiência)?*</label>
+        <input type="radio" value="pcd" name="pcd"> Sim
+        <input type="radio" value="pcd" name="pcd"> Não
+        <label for="sexo">Sexo:*</label>
+        <select class="sexo" name="sexo" id="sexo">
+            <option value=""></option>
+            <option value="feminino">Feminino</option>
+            <option value="masculino">Masculino</option>
+            <option value="na">Prefiro não informar</option>
+        </select>
+        <label for="raca">Raça:</label>
+        <select name="raca" id="raca" required>
+            <option value=""></option>
+            <option value="negro">Negro</option>
+            <option value="branco">Branco</option>
+            <option value="pardo">Pardo</option>
+            <option value="amarelo">Amarelo</option>
+            <option value="indigena">Indígena</option>
+            <option value="naraca">Prefiro Não Informar</option>
+        </select>
+        <label for="genero">Gênero*:</label>
+        <select required>
+            <option value=""></option>
+            <option value="Nao_informar">Não informar</option>
+            <option value="Transgenero">Transgênero Masculino</option>
+            <option value="Transgenero_Feminino">Transgênero Feminino</option>
+            <option value="Travesti_Transgenero">Travesti Transgênero</option>
+            <option value="Genero_Neutro">Gênero Neutro</option>
+            <option value="Nao_Binario">Não-Binário</option>
+            <option value="Agenero">Agênero</option>
+            <option value="Pangenero">Pangênero</option>
+            <option value="Genderqueer">Genderqueer</option>
+            <option value="Two_Spirit">Two-Spirit</option>
+            <option value="Terceiro_Genero">Terceiro Gênero</option>
+            <option value="Todos">Todos</option>
+            <option value="Nenhum">Nenhum</option>
+        </select>
+        <label for="civil">Estado Civil:*</label>
+        <select>
+            <option value=""></option>
+            <option value="Solteiro">SOLTEIRO (A)</option>
+            <option value="Casado">CASADO (A)</option>
+            <option value="Viuvo">VIÚVO (A)</option>
+            <option value="Divorciado">DIVORCIADO (A)</option>
+            <option value="Separado">SEPARADO (A)</option>
+            <option value="Companheiro">COMPANHEIRO (A)</option>
+        </select>
+        <label for="telefone">Telefone:*</label>
+        <input type="tel" id="telefone" class="input-padrao" required placeholder="(xx) xxxxx-xxxx"> e/ou
+        <input type="tel" id="telefone" class="input-padrao" required placeholder="(xx) xxxxx-xxxx">
+        <div id="button">
+            <div class="button_slide slide_down">Próxima Etapa! </div>
+    </section>
+    <section class="section2">
+        <h3>Endereço:</h3>
+        <label for="cep">CEP:</label>
+        <input type="text" name="cep" id="cep">
+        <label for="endereco">Endereço:</label>
+        <input type="text" name="endereco" id="endereco">
+        <label for="numeroEnd">Número:</label>
+        <input type="text" name="numeroEnd" id="numeroEnd">
+        <label for="bairro">Bairro:</label>
+        <input type="text" name="bairro" id="bairro">
+        <label for="cidadeEnd">Cidade:</label>
+        <input type="text" name="cidadeEnd" id="cidadeEnd">
+        <label for="ufend">UF:</label>
+        <input type="text" name="ufend" id="ufend">
+        <label for="comentario">Complemento:</label>
+        <input type="text">
+        <div id="button">
+            <div class="button_slide slide_down">Próxima Etapa! </div>
+    </section>
+
+    <section class="section3">
+        <h3>Contatos para Recados:</h3>
+        <label for="telefone">Telefone</label>
+        <input type="text" name="telefone" id="telefone">
+        <label for="contato">Nome do Contato</label>
+        <input type="text" name="contato" id="contato">
+        <label for="parentesco">Grau de Parentesco / Amizade</label>
+        <select>
+            <option value=""></option>
+            <option value="Pai">PAI</option>
+            <option value="Mae">MÃE</option>
+            <option value="Irmao">IRMÃO</option>
+            <option value="Amigo">AMIGO</option>
+            <option value="AVOS">AVÓS</option>
+            <option value="TIOS">TIOS</option>
+            <option value="MADRASTA">MADRASTA</option>
+            <option value="PADASTRO">PADASTRO</option>
+            <option value="OUTROS">OUTROS</option>
+        </select>
+        <div id="button">
+            <div class="button_slide slide_down">Próxima Etapa! </div>
+    </section>
+
+    <section class="section4">
+        <h3>Formação Acadêmica:</h3>
+        <div class="containerSalvarCurso">
+            <h1>Formação/Curso</h1>
+
+            <label for="nivel">Nível</label>
+            <input type="text" id="nivel" name="nivel">
+
+            <label for="cursos">Cursos</label>
+            <select id="cursos" name="cursos">
+                <option value="">Selecione um item</option>
+            </select>
+
+            <label for="cursosNaoListado">Cursos Não Listado</label>
+            <input type="text" id="cursosNaoListado" name="cursosNaoListado">
+
+            <label for="instituicao">Instituição</label>
+            <select id="instituicao" name="instituicao">
+                <option value="">Selecione um item</option>
+            </select>
+
+            <label for="instituicaoNaoListado">Instituição Não Listada</label>
+            <input type="text" id="instituicaoNaoListado" name="instituicaoNaoListado">
+
+            <label for="statusDoCurso">Status do Curso</label>
+            <select id="statusDoCurso" name="statusDoCurso">
+            </select>
+
+            <div>
+                <div>
+                    <label for="semestreAnoInicial">Semestre/Ano Inicial</label>
+                    <input type="text" id="semestreAnoInicial" name="semestreAnoInicial">
+                </div>
+                <div>
+                    <label for="semestreAno">Semestre/Ano Previsão de Conclusão</label>
+                    <input type="text" id="semestreAno" name="semestreAno">
+                </div>
+            </div>
+
+            <label for="turno">Turno</label>
+            <select id="turno" name="turno">
+            </select>
+
+            <label for="modalidade">Modalidade</label>
+            <select id="modalidade" name="modalidade">
+            </select>
+
+            <label for="raMatricula">RA / Matrícula</label>
+            <input type="text" id="raMatricula" name="raMatricula">
+
+            <button type="submit">Salvar</button>
+            <button type="button">Cancelar</button>
+        </div>
+        <div id="button">
+            <div class="button_slide slide_down">Adicionar</div> <br> <br>
+            <div class="button_slide slide_down">Próxima Etapa! </div>
+        </div>
+    </section>
+
+    <section class="section5">
+        <h3>Idiomas:</h3>
+        <div class="container">
+
+            <label for="idioma">Idioma:</label>
+            <select id="idioma">
+                <option value="">Selecione um idioma</option>
+                <option value="english">Inglês</option>
+                <option value="spanish">Espanhol</option>
+                <option value="french">Francês</option>
+                <option value="portuguese">Português</option>
+                <option value="japones">Japônes</option>
+                <option value="mandarim">Mandarim</option>
+            </select>
+
+            <label for="nivel">Nível:</label>
+            <select id="nivel">
+                <option value="">Selecione um nível</option>
+                <option value="iniciante">Iniciante</option>
+                <option value="intermediario">Intermediário</option>
+                <option value="avançado">Avançado</option>
+                <option value="fluente">Fluente</option>
+            </select>
+
+            <button>Salvar</button>
+            <button>Cancelar</button>
+        </div>
+        <div id="button">
+            <div class="button_slide slide_down">Adicionar</div> <br> <br>
+            <div class="button_slide slide_down">Próxima Etapa! </div>
+        </div>
+    </section>
+
+    <section class="section6">
+        <h3>Experiência Profissional:</h3>
+        <div class="container">
+            <form class="formEmpregos">
+                <div class="experienciaProfissional">
+                    <label for="empresa">Nome da Empresa:</label>
+                    <input type="text" id="empresa" name="empresa" placeholder="Nome da Empresa">
+                </div>
+                <div class="experienciaProfissional">
+                    <label for="cargo">Cargo:</label>
+                    <input type="text" id="cargo" name="cargo" placeholder="Cargo">
+                </div>
+                <div class="experienciaProfissional">
+                    <label for="novo-cargo">Novo Cargo:</label>
+                    <input type="text" id="novo-cargo" name="novo-cargo" placeholder="Novo Cargo">
+                </div>
+                <div class="experienciaProfissional">
+                    <label>Emprego Atual?</label>
+                    <div class="radio-group">
+                        <input type="radio" id="sim" name="emprego-atual" value="sim">
+                        <label for="sim">Sim</label>
+                        <input type="radio" id="nao" name="emprego-atual" value="nao">
+                        <label for="nao">Não</label>
+                    </div>
+                </div>
+                <div class="experienciaProfissional">
+                    <label for="data-entrada">Data de Entrada:</label>
+                    <input type="date" id="data-entrada" name="data-entrada">
+                    <span class="calendar-icon">📅</span>
+                </div>
+                <div class="experienciaProfissional">
+                    <label for="data-saida">Data de Saída:</label>
+                    <input type="date" id="data-saida" name="data-saida">
+                    <span class="calendar-icon">📅</span>
+                </div>
+                <div class="experienciaProfissional">
+                    <label for="cidade">Cidade:</label>
+                    <input type="text" id="cidade" name="cidade" placeholder="Cidade">
+                </div>
+                <div class="experienciaProfissional">
+                    <label for="estado">Estado:</label>
+                    <input type="text" id="estado" name="estado" placeholder="Estado">
+                </div>
+                <div class="experienciaProfissional">
+                    <label for="pais">País:</label>
+                    <input type="text" id="pais" name="pais" placeholder="País">
+                </div>
+                <div class="experienciaProfissional">
+                    <label for="salario">Último Salário:</label>
+                    <input type="text" id="salario" name="salario" placeholder="Último Salário">
+                </div>
+                <div class="experienciaProfissional">
+                    <label for="atividades">Atividades:</label>
+                    <textarea id="atividades" name="atividades" placeholder="Descreva suas atividades"></textarea>
+                </div>
+                <button type="submit">Salvar</button>
+                <button type="button">Cancelar</button>
+            </form>
+            <div id="button">
+                <div class="button_slide slide_down">Adicionar</div> <br> <br>
+                <div class="button_slide slide_down">Próxima Etapa! </div>
+            </div>
+    </section>
+
+    <section class="section7">
+        <h3>Conhecimentos de Informática:</h3>
+        <div class="container">
+            <h2 class="title">Novo Conhecimento</h2>
+            <label class="label" for="conhecimento">Conhecimento</label>
+            <select>
+                <option value=""></option>
+                <option>Windows, Word, Internet</option>
+                <option>Canva</option>
+                <option>Front End</option>
+                <option>Java</option>
+                <option>Php</option>
+                <option>Bdd</option>
+                <option>Scrum</option>
+                <option>Informática Básica, Python, Digitação E Arduino</option>
+                <option>Excel</option>
+                <option>Operador De Computação</option>
+                <option>Download</option>
+                <option>Powerpoint</option>
+                <option>World</option>
+                <option>Gestão Administrativa</option>
+                <option>Computação</option>
+                <option>Pacote Office</option>
+                <option>Operadora De Microcomputadores</option>
+                <option>Word, Excel</option>
+                <option>Jsp</option>
+                <option>Git</option>
+                <option>Html E Css</option>
+                <option>Mysql</option>
+                <option>Informatica</option>
+                <option>Intermediário</option>
+                <option>Operador De Micro</option>
+                <option>Microsoft Outlook</option>
+                <option>Digitação</option>
+                <option>Microsoft Power Point</option>
+                <option>Micorsoft Excel</option>
+                <option>Microsoft Word</option>
+                <option>Nível Básico No Excel E No Word</option>
+                <option>Básico Do Excel E Do Word</option>
+                <option>Informática Essencial</option>
+                <option>Design Gráfico</option>
+                <option>Técnico De Informática, Montador E Configurador De Computadores</option>
+                <option>Pacote Home Office</option>
+                <option>Word, Power Point, Excel, Arquivos, Entre Outros</option>
+                <option>Informática Profissional</option>
+                <option>Auxiliar Administrativo</option>
+                <option>Assistente Administrativo Completo</option>
+                <option>Básico</option>
+                <option>Informática Avançada</option>
+                <option>Sistema Operacional Windows</option>
+                <option>Logistica</option>
+                <option>Corel Draw</option>
+                <option>Ipd</option>
+                <option>Informática</option>
+                <option>Conhecimento Básico E Intermediário Em Excel</option>
+                <option>Conhecimento Em Excel</option>
+                <option>Ti</option>
+                <option>Montagem E Configuração</option>
+                <option>Photoshop</option>
+                <option>Corel Draw</option>
+                <option>Excel, Word, Powerpoint</option>
+                <option>Word, Excel, Power Point, Coredraw, Photoshop</option>
+                <option>Recepcionista</option>
+                <option>Planilhas</option>
+                <option>Atendimento Ao Cliente</option>
+                <option>Oratória</option>
+                <option>Telefonia</option>
+                <option>Informática Em Geral</option>
+                <option>Sistemas Operacionais, Google Drive E Microsoft Office, Redes Sociais, Google Analytics, Seo
+                </option>
+            </select>
+            <label class="label" for="novoConhecimento">Novo Conhecimento</label>
+            <input class="input" type="text" id="novoConhecimento" />
+            <label class="label" for="nivel">Nível</label>
+            <input class="input" type="text" id="nivel" />
+            <button class="button">Salvar</button>
+            <button class="button cancel">Cancelar</button>
+        </div>
+        <div id="button">
+            <div class="button_slide slide_down">Adicionar</div> <br> <br>
+            <div class="button_slide slide_down">Próxima Etapa! </div>
+        </div>
+    </section>
+
+    <section class="section8">
+        <h3>Anexar Currículo:</h3>
+        <label for="curriculo" class="custom-file-upload">
+            Selecionar Arquivo
+            <input type="file" name="curriculo" id="curriculo"></label>
+        <div id="button">
+            <div class="button_slide slide_down">Próxima Etapa! </div>
+        </div>
+    </section>
+
+    <section class="section9">
+        <h3>Termo de Aceite LGPD:</h3>
+        <input type="checkbox" name="lgpd" id="lgpd">
+        <label for="lgpd" class="custom-checkbox"></label>
+        <label for="lgpd">Eu aceito os termos de LGPD</label>
+        <div id="button">
+            <div class="button_slide slide_down">Próxima Etapa! </div>
+    </section>
+
+    <div class="text-alertjs">
+        <h3>Formulário Completo!</h3>
+        <p>Seu currículo foi cadastrado com sucesso.</p>
+    </div>
+    </form>
+    <script src="scriptcpf.js"></script>
+    <footer>
+        <p id="p_rodape">
+            &copy; 2024 Bruxa <b> P </b> - Todos os direitos reservados
+        </p>
+    </footer>
+</body>
+
+</html>

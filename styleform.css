@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&display=swap');
+
+@font-face {
+
+    font-family: bruxadesenho;
+    src: url(Witcha.otf);
+}
+
+/*Cabeçalho*/
+
+body {
+    font-family: "Edu AU VIC WA NT Hand", cursive;
+    background: #25252b;
+}
+
+header {
+    justify-content: center;
+    text-align: center;
+    color: aliceblue;
+}
+
+/* Botão */
+.button_slide {
+    color: #FFF;
+    border: 2px solid rgb(136, 25, 25);
+    border-radius: 0px;
+    padding: 18px 36px;
+    display: inline-block;
+    font-family: "Lucida Console", Monaco, monospace;
+    font-size: 14px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    box-shadow: inset 0 0 0 0 rgb(136, 25, 25);
+    -webkit-transition: ease-out 0.4s;
+    -moz-transition: ease-out 0.4s;
+    transition: ease-out 0.4s;
+}
+
+.slide_down:hover {
+    box-shadow: inset 0 100px 0 0 rgb(136, 25, 25);
+}
+
+.slide_right:hover {
+    box-shadow: inset 400px 0 0 0 rgb(136, 25, 25);
+}
+
+.slide_left:hover {
+    box-shadow: inset 0 0 0 50px rgb(136, 25, 25);
+}
+
+.slide_diagonal:hover {
+    box-shadow: inset 400px 50px 0 0 rgb(136, 25, 25);
+}
+
+#button {
+    width: 364px;
+    margin: 50px auto 0 auto;
+    text-align: center;
+}
+
+/*Personalização INPUTS/LABES/SELECT/FILE/CHECKBOX*/
+
+input[type="text"] {
+    border: 2px solid #ccc;
+    border-radius: 15px;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+label {
+    font-weight: bold;
+    margin-top: 10px;
+    display: block;
+}
+
+select {
+    border: 2px solid #ccc;
+    border-radius: 15px;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    appearance: none;
+    background: white no-repeat right 10px center;
+    background-size: 12px 12px;
+}
+
+/* CURRICULO FILE */
+#curriculo {
+    display: none;
+}
+
+.custom-file-upload {
+    display: inline-block;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: 2px solid #ccc;
+    border-radius: 15px;
+    background-color: #f8f8f8;
+    color: #333;
+    font-size: 16px;
+    text-align: center;
+}
+
+/* LGPD */
+input[type="checkbox"] {
+    display: none;
+}
+
+.custom-file-upload:hover {
+    background-color: #e0e0e0;
+    border-color: #999;
+}
+
+.custom-file-upload:hover {
+    background-color: #e0e0e0;
+    border-color: #999;
+}
+
+.custom-file-upload:hover {
+    background-color: #e0e0e0;
+    border-color: #999;
+}
+
+.custom-checkbox {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    cursor: pointer;
+    position: relative;
+}
+
+.custom-checkbox::after {
+    content: '';
+    width: 10px;
+    height: 10px;
+    background-color: rgb(136, 25, 25);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 2px;
+    display: none;
+}
+
+input[type="checkbox"]:checked+.custom-checkbox::after {
+    display: block;
+}
+
+label {
+    margin-left: 8px;
+    font-size: 16px;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+/*Seção 01*/
+.section1 {
+    background-color: grey;
+    position: relative;
+    width: 750px;
+    height: 450px;
+    border: 2px solid rgb(136, 25, 25);
+    box-shadow: 0 0 25px rgb(136, 25, 25);
+    overflow: hidden;
+    justify-content: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*Seção 02*/
+.section2 {
+    background-color: grey;
+    position: relative;
+    width: 750px;
+    height: 450px;
+    border: 2px solid rgb(136, 25, 25);
+    box-shadow: 0 0 25px rgb(136, 25, 25);
+    overflow: hidden;
+    justify-content: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*Seção 03*/
+.section3 {
+    background-color: grey;
+    position: relative;
+    width: 750px;
+    height: 450px;
+    border: 2px solid rgb(136, 25, 25);
+    box-shadow: 0 0 25px rgb(136, 25, 25);
+    overflow: hidden;
+    justify-content: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*Seção 04*/
+.section4 {
+    background-color: grey;
+    position: relative;
+    width: 750px;
+    height: 450px;
+    border: 2px solid rgb(136, 25, 25);
+    box-shadow: 0 0 25px rgb(136, 25, 25);
+    overflow: hidden;
+    justify-content: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*Seção 05*/
+.section5 {
+    background-color: grey;
+    position: relative;
+    width: 750px;
+    height: 450px;
+    border: 2px solid rgb(136, 25, 25);
+    box-shadow: 0 0 25px rgb(136, 25, 25);
+    overflow: hidden;
+    justify-content: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*Seção 06*/
+.section6 {
+    background-color: grey;
+    position: relative;
+    width: 750px;
+    height: 450px;
+    border: 2px solid rgb(136, 25, 25);
+    box-shadow: 0 0 25px rgb(136, 25, 25);
+    overflow: hidden;
+    justify-content: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*Seção 07*/
+.section7 {
+    background-color: grey;
+    position: relative;
+    width: 750px;
+    height: 450px;
+    border: 2px solid rgb(136, 25, 25);
+    box-shadow: 0 0 25px rgb(136, 25, 25);
+    overflow: hidden;
+    justify-content: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*Seção 08*/
+.section8 {
+    background-color: grey;
+    position: relative;
+    width: 750px;
+    height: 450px;
+    border: 2px solid rgb(136, 25, 25);
+    box-shadow: 0 0 25px rgb(136, 25, 25);
+    overflow: hidden;
+    justify-content: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*Seção 09*/
+.section9 {
+    background-color: grey;
+    position: relative;
+    width: 750px;
+    height: 450px;
+    border: 2px solid rgb(136, 25, 25);
+    box-shadow: 0 0 25px rgb(136, 25, 25);
+    overflow: hidden;
+    justify-content: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/*Alerta Form */
+.text-alertjs {
+    color: 136, 25, 25;
+}
+
+/*Roda pé*/
+footer {
+    color: rgb(136, 25, 25)s;
+    background-color: rgb(136, 25, 25);
+    text-align: center;
+    justify-content: center;
+    height: 47px;
+    display: block;
+    bottom: 0;
+    width: 100%;
+}
+
+.p_rodape {
+    font-size: 20px;
+}
+
+#p_rodape {
+    background-color: #FFFFF3;
+}
+
+b {
+    font-family: bruxadesenho;
+    font-size: 30px;
+}
